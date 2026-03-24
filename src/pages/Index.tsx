@@ -101,7 +101,7 @@ export default function Index() {
               className="font-pixel text-xs hidden sm:block"
               style={{ color: "#5aac44", textShadow: "2px 2px 0 #1a5c0a" }}
             >
-              MC<span style={{ color: "#ffd700" }}>Donate</span>
+              One<span style={{ color: "#ffd700" }}>Grief</span>
             </span>
           </div>
 
@@ -212,7 +212,7 @@ export default function Index() {
                     textShadow: "3px 3px 0px #3d7a2e, 6px 6px 0px rgba(0,0,0,0.5)",
                   }}
                 >
-                  MC<span style={{ color: "#5aac44" }}>Donate</span>
+                  One<span style={{ color: "#5aac44" }}>Grief</span>
                 </h1>
                 <p
                   className="text-xl mb-4 font-rubik font-semibold"
@@ -252,7 +252,7 @@ export default function Index() {
           <div className="max-w-6xl mx-auto px-6 py-16">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
               {[
-                { icon: "🌍", title: "IP Сервера", value: "play.mcserver.ru", sub: "Java Edition 1.20" },
+                { icon: "🌍", title: "IP Сервера", value: "onegr.rustix.su", sub: "Java Edition 1.20" },
                 { icon: "👥", title: "Игроки онлайн", value: "47 / 200", sub: "Прямо сейчас" },
                 { icon: "⚡", title: "Режим игры", value: "Выживание", sub: "Кооперативный" },
               ].map((info, i) => (
@@ -652,11 +652,11 @@ export default function Index() {
         <div className="flex items-center justify-center gap-3 mb-3">
           <span className="text-xl">⛏️</span>
           <span className="font-pixel text-xs" style={{ color: "#5aac44" }}>
-            MC<span style={{ color: "#ffd700" }}>Donate</span>
+            One<span style={{ color: "#ffd700" }}>Grief</span>
           </span>
         </div>
         <p className="font-rubik text-xs" style={{ color: "#444444" }}>
-          © 2024 MCDonate — Сервер выживания. Все права защищены.
+          © 2024 OneGrief — Сервер выживания. Все права защищены.
         </p>
         <p className="font-rubik text-xs mt-1" style={{ color: "#333333" }}>
           Не является официальным продуктом Mojang Studios
