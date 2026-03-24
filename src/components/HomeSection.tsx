@@ -8,7 +8,7 @@ interface HomeSectionProps {
 
 export default function HomeSection({ setActiveSection }: HomeSectionProps) {
   const serverInfo = [
-    { icon: "🌍", title: "ВЕРСИЯ", value: "1.20.4", sub: "Java Edition" },
+    { icon: "🌍", title: "ВЕРСИЯ", value: "1.21.10-1.21.11", sub: "Java Edition" },
     { icon: "👥", title: "ОНЛАЙН", value: "24/7", sub: "Без вайпов" },
     { icon: "🏆", title: "РЕЖИМ", value: "Выживание", sub: "Хозяйство" },
     { icon: "💎", title: "ЗАЩИТА", value: "Регионы", sub: "Сейфы & Замки" },
