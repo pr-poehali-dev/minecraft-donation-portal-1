@@ -468,38 +468,77 @@ export default function Index() {
           )}
 
           {/* Реквизиты */}
-          <div
-            className="max-w-xl mx-auto mt-6 mc-card p-6 animate-fade-in-up"
-            style={{ border: "2px solid #ffd70044" }}
-          >
-            <div className="flex items-center gap-4">
-              <div className="text-4xl flex-shrink-0">💳</div>
-              <div className="flex-1">
-                <div className="font-pixel text-xs mb-2" style={{ color: "#5aac44" }}>
-                  ПЕРЕВОД ПО НОМЕРУ ТЕЛЕФОНА
-                </div>
-                <div
-                  className="font-rubik font-bold text-xl tracking-widest mb-1"
-                  style={{ color: "#ffffff", letterSpacing: "0.12em" }}
-                >
-                  +7-920-875-39-27
-                </div>
-                <div className="font-rubik text-xs" style={{ color: "#888888" }}>
-                  Сбербанк · После оплаты напиши в Discord с никнеймом
+          <div className="max-w-xl mx-auto mt-6 space-y-4">
+            {/* СБП */}
+            <div
+              className="mc-card p-6 animate-fade-in-up"
+              style={{ border: "2px solid #5aac4455" }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <div className="text-3xl">⚡</div>
+                <div>
+                  <div className="font-pixel text-xs" style={{ color: "#5aac44" }}>
+                    СБП — БЫСТРЫЕ ПЛАТЕЖИ
+                  </div>
+                  <div className="font-rubik text-xs mt-1" style={{ color: "#888888" }}>
+                    Мгновенный перевод из любого банка
+                  </div>
                 </div>
               </div>
-              <button
-                onClick={() => navigator.clipboard.writeText("+79208753927")}
-                className="mc-button px-3 py-2 font-pixel text-xs flex-shrink-0"
-                style={{
-                  background: "linear-gradient(to bottom, #444, #333)",
-                  color: "#ffd700",
-                  fontSize: "9px",
-                }}
-                title="Скопировать номер"
+              <div
+                className="flex items-center justify-between p-3 mb-4"
+                style={{ background: "#1a1a1a", border: "2px solid #333" }}
               >
-                📋
-              </button>
+                <span className="font-rubik font-bold text-lg" style={{ color: "#ffffff", letterSpacing: "0.08em" }}>
+                  +7-920-875-39-27
+                </span>
+                <button
+                  onClick={() => navigator.clipboard.writeText("+79208753927")}
+                  className="mc-button px-3 py-1 font-rubik text-xs"
+                  style={{ background: "linear-gradient(to bottom, #444, #333)", color: "#5aac44" }}
+                >
+                  Скопировать
+                </button>
+              </div>
+              <div className="space-y-2">
+                {[
+                  "1. Открой приложение своего банка",
+                  "2. Переводы → По номеру телефона (СБП)",
+                  "3. Введи номер и сумму доната",
+                  "4. Выбери банк получателя: Сбербанк",
+                  "5. Напиши в Discord свой ник после оплаты",
+                ].map((step, i) => (
+                  <div key={i} className="flex items-start gap-2 font-rubik text-xs" style={{ color: "#aaaaaa" }}>
+                    <span style={{ color: "#5aac44", flexShrink: 0 }}>▸</span>
+                    {step}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Сбербанк прямо */}
+            <div
+              className="mc-card p-5 animate-fade-in-up"
+              style={{ border: "2px solid #33333388", animationDelay: "0.1s" }}
+            >
+              <div className="flex items-center gap-4">
+                <div className="text-3xl flex-shrink-0">💳</div>
+                <div className="flex-1">
+                  <div className="font-pixel text-xs mb-1" style={{ color: "#5aac44" }}>
+                    СБЕРБАНК · НОМЕР ТЕЛЕФОНА
+                  </div>
+                  <div className="font-rubik font-bold text-lg" style={{ color: "#ffffff", letterSpacing: "0.08em" }}>
+                    +7-920-875-39-27
+                  </div>
+                </div>
+                <button
+                  onClick={() => navigator.clipboard.writeText("+79208753927")}
+                  className="mc-button px-3 py-2 font-pixel flex-shrink-0"
+                  style={{ background: "linear-gradient(to bottom, #444, #333)", color: "#ffd700", fontSize: "9px" }}
+                >
+                  📋
+                </button>
+              </div>
             </div>
           </div>
         </div>
