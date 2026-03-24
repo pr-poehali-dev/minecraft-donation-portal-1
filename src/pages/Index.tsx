@@ -466,6 +466,42 @@ export default function Index() {
               </p>
             </div>
           )}
+
+          {/* Реквизиты */}
+          <div
+            className="max-w-xl mx-auto mt-6 mc-card p-6 animate-fade-in-up"
+            style={{ border: "2px solid #ffd70044" }}
+          >
+            <div className="flex items-center gap-4">
+              <div className="text-4xl flex-shrink-0">💳</div>
+              <div className="flex-1">
+                <div className="font-pixel text-xs mb-2" style={{ color: "#ffd700" }}>
+                  ПЕРЕВОД НА КАРТУ
+                </div>
+                <div
+                  className="font-rubik font-bold text-xl tracking-widest mb-1"
+                  style={{ color: "#ffffff", letterSpacing: "0.12em" }}
+                >
+                  +7-920-875-39-27
+                </div>
+                <div className="font-rubik text-xs" style={{ color: "#888888" }}>
+                  Т-Банк · После оплаты напиши в Discord с никнеймом
+                </div>
+              </div>
+              <button
+                onClick={() => navigator.clipboard.writeText("+79208753927")}
+                className="mc-button px-3 py-2 font-pixel text-xs flex-shrink-0"
+                style={{
+                  background: "linear-gradient(to bottom, #444, #333)",
+                  color: "#ffd700",
+                  fontSize: "9px",
+                }}
+                title="Скопировать номер"
+              >
+                📋
+              </button>
+            </div>
+          </div>
         </div>
       )}
 
