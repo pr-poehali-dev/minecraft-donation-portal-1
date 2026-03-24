@@ -540,6 +540,31 @@ export default function Index() {
                 </button>
               </div>
             </div>
+
+            {/* Телеграм после покупки */}
+            <a
+              href="https://t.me/sasana154super"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mc-card p-5 animate-fade-in-up flex items-center gap-4 no-underline"
+              style={{ border: "2px solid #229ed955", display: "flex", animationDelay: "0.2s" }}
+            >
+              <div className="text-3xl flex-shrink-0">✈️</div>
+              <div className="flex-1">
+                <div className="font-pixel text-xs mb-1" style={{ color: "#229ed9" }}>
+                  ПОСЛЕ ПОКУПКИ — НАПИСАТЬ В TELEGRAM
+                </div>
+                <div className="font-rubik font-bold text-lg" style={{ color: "#ffffff" }}>
+                  @sasana154super
+                </div>
+                <div className="font-rubik text-xs mt-1" style={{ color: "#888888" }}>
+                  Пришли скриншот оплаты — получишь доступ
+                </div>
+              </div>
+              <div className="font-pixel text-xs flex-shrink-0" style={{ color: "#229ed9" }}>
+                ▸
+              </div>
+            </a>
           </div>
         </div>
       )}
