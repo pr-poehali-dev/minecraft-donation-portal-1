@@ -475,8 +475,8 @@ export default function Index() {
             <div className="flex items-center gap-4">
               <div className="text-4xl flex-shrink-0">💳</div>
               <div className="flex-1">
-                <div className="font-pixel text-xs mb-2" style={{ color: "#ffd700" }}>
-                  ПЕРЕВОД НА КАРТУ
+                <div className="font-pixel text-xs mb-2" style={{ color: "#5aac44" }}>
+                  ПЕРЕВОД ПО НОМЕРУ ТЕЛЕФОНА
                 </div>
                 <div
                   className="font-rubik font-bold text-xl tracking-widest mb-1"
@@ -485,7 +485,7 @@ export default function Index() {
                   +7-920-875-39-27
                 </div>
                 <div className="font-rubik text-xs" style={{ color: "#888888" }}>
-                  Т-Банк · После оплаты напиши в Discord с никнеймом
+                  Сбербанк · После оплаты напиши в Discord с никнеймом
                 </div>
               </div>
               <button
