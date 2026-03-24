@@ -252,7 +252,7 @@ export default function Index() {
           <div className="max-w-6xl mx-auto px-6 py-16">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
               {[
-                { icon: "🌍", title: "IP Сервера", value: "onegr.rustix.su", sub: "Java Edition 1.20" },
+                { icon: "🌍", title: "IP Сервера", value: "onegr.rustix.su", sub: "Java 1.21.10–1.21.11" },
                 { icon: "👥", title: "Игроки онлайн", value: "47 / 200", sub: "Прямо сейчас" },
                 { icon: "⚡", title: "Режим игры", value: "Выживание", sub: "Кооперативный" },
               ].map((info, i) => (
